@@ -1,0 +1,6 @@
+[2025-11-11 14:02:24.132]	List of discovered tpm plugins: christoomey/vim-tmux-navigator
+[2025-11-11 14:02:24.144]	Invoking /Users/rob/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-11-11 14:02:24.743]	Installing "vim-tmux-navigator"
+[2025-11-11 14:02:25.156]	  "vim-tmux-navigator" download success
+[2025-11-11 14:02:25.225]	Done.
+
