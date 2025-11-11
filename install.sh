@@ -10,8 +10,8 @@ DOTFILES_DIR="/workspaces/.codespaces/.persistedshare/dotfiles"
 mkdir -p "$HOME/.config"
 
 # Symlink specific config files/folders
-ln -sfn "$DOTFILES_DIR/tmux" "$HOME/.config/tmux"
-ln -sfn "$DOTFILES_DIR/nvim" "$HOME/.config/nvim" 
+ln -sfn "$DOTFILES_DIR/.config/tmux" "$HOME/.config/tmux"
+ln -sfn "$DOTFILES_DIR/.config/nvim" "$HOME/.config/nvim" 
 
 # Other dotfiles (e.g., .bashrc)
 ln -sfn "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
