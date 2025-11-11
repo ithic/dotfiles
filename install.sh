@@ -4,9 +4,17 @@
 sudo apt-get update
 sudo apt-get install -y neovim tmux
 
-# Then symlink your config files
-ln -sf ~/dotfiles/.config/tmux ~/.config/tmux
-ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
+DOTFILES_DIR="$HOME/.codespaces/.persistedshare/dotfiles"
+
+# Create the ~/.config directory if it doesn't exist
+mkdir -p "$HOME/.config"
+
+# Symlink specific config files/folders
+ln -sfn "$DOTFILES_DIR/tmux" "$HOME/.config/tmux"
+ln -sfn "$DOTFILES_DIR/nvim" "$HOME/.config/nvim" 
+
+# Other dotfiles (e.g., .bashrc)
+ln -sfn "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 
 # Install Claude Code
 curl -fsSL https://releases.claude.ai/claude-code/install.sh | sh
