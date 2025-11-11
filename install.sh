@@ -4,7 +4,7 @@
 sudo apt-get update
 sudo apt-get install -y neovim tmux
 
-DOTFILES_DIR="$HOME/.codespaces/.persistedshare/dotfiles"
+DOTFILES_DIR="/workspaces/.codespaces/.persistedshare/dotfiles"
 
 # Create the ~/.config directory if it doesn't exist
 mkdir -p "$HOME/.config"
